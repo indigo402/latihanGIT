@@ -9,6 +9,26 @@
 <body>
     <h1>Program GIT Saw404</h1>
     <p>Klik daftar untuk meningkatkan skillmu!</p>
-    <button>Daftar</button>
+    <button onclick="cekProgram()">Cek Program</button>
+    <div id="program" style="visibility: hidden;">
+        <table border="1">
+            <tr>
+                <td>Program</td>
+                <td>Waktu</td>
+                <td>Daftar Program</td>
+
+            </tr>
+            <tr>
+                <td>GIT Personal Project</td>
+                <td>19 April 2022</td>
+                <td><button>Daftar</button></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function cekProgram() {
+            document.getElementById("program").style.visibility = "visible"
+        }
+    </script>
 </body>
 </html>
